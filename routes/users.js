@@ -1,4 +1,3 @@
-const { json } = require("express");
 const express = require("express");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
@@ -62,7 +61,7 @@ router.post(
           res.json({ token });
         }
       );
-    } catch (error) {
+    } catch (err) {
       console.error(err.message);
       res.status(500).send("server error");
     }
