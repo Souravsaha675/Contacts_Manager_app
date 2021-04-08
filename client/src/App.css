@@ -247,9 +247,13 @@ img {
 
 .btn-primary,
 .bg-primary,
-.badge-primary,
 .alert-primary {
   background: var(--primary-color);
+  color: #fff;
+}
+
+.badge-primary {
+  background: rgba(9, 111, 228, 0.74);
   color: #fff;
 }
 
